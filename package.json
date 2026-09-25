@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-conversao-de-unidades-laboratoriais",
+  "version": "0.1.0",
+  "description": "Conversão de unidades laboratoriais",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-conversao-de-unidades-laboratoriais.git"
+  }
+}

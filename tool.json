@@ -1,0 +1,256 @@
+{
+  "tool": {
+    "id": "conversao-de-unidades-laboratoriais",
+    "title": "Conversão de unidades laboratoriais",
+    "short": "mg/dL ↔ mmol/L ou µmol/L (unidades SI)",
+    "desc": "Converte glicose, colesterol, triglicerídeos, creatinina, ureia, BUN, cálcio, ácido úrico e bilirrubina entre mg/dL e unidades SI (mmol/L ou µmol/L).",
+    "lead": "Converte os exames bioquímicos mais comuns entre a unidade convencional (mg/dL) e a do Sistema Internacional, para ler artigos e diretrizes estrangeiras.",
+    "spec": [
+      "medicina-laboratorial",
+      "clinica-medica",
+      "nefrologia",
+      "endocrinologia-e-metabologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "an",
+        "Exame",
+        "sel",
+        {
+          "opts": {
+            "glicose": "Glicose",
+            "colesterol": "Colesterol (total, HDL, LDL)",
+            "triglicerideos": "Triglicerídeos",
+            "creatinina": "Creatinina",
+            "ureia": "Ureia",
+            "bun": "BUN (nitrogênio ureico)",
+            "calcio": "Cálcio total",
+            "acido_urico": "Ácido úrico",
+            "bilirrubina": "Bilirrubina"
+          }
+        }
+      ],
+      [
+        "dir",
+        "Converter",
+        "radio",
+        {
+          "opts": {
+            "si": "De mg/dL para SI",
+            "conv": "De SI para mg/dL"
+          }
+        }
+      ],
+      [
+        "val",
+        "Valor",
+        "num",
+        {
+          "min": 0,
+          "max": 100000,
+          "step": 0.001,
+          "unit": "",
+          "ph": "100"
+        }
+      ]
+    ],
+    "formula": "<p>mmol/L = mg/dL × 10 ÷ massa molar; µmol/L = mg/dL × 10.000 ÷ massa molar.</p><ul><li>Glicose (180,16 g/mol): × 0,0555 · colesterol (386,65): × 0,02586 · triglicerídeos (como trioleína, 885,7): × 0,01129</li><li>Creatinina (113,12): × 88,4 µmol/L · ácido úrico (168,11): × 59,48 µmol/L · bilirrubina (584,66): × 17,1 µmol/L</li><li>Ureia (60,06): × 0,1665 · BUN (28 g de nitrogênio por mol de ureia): × 0,357 mmol/L de ureia · <strong>BUN = ureia × 0,466</strong> (ureia = BUN × 2,14)</li><li>Cálcio (40,08): × 0,2495</li></ul>",
+    "table": [
+      [
+        "Exame",
+        "mg/dL → SI",
+        "Exemplo"
+      ],
+      [
+        "Glicose",
+        "× 0,0555 mmol/L",
+        "100 mg/dL = 5,55 mmol/L"
+      ],
+      [
+        "Colesterol",
+        "× 0,0259 mmol/L",
+        "200 mg/dL = 5,17 mmol/L"
+      ],
+      [
+        "Triglicerídeos",
+        "× 0,0113 mmol/L",
+        "150 mg/dL = 1,69 mmol/L"
+      ],
+      [
+        "Creatinina",
+        "× 88,4 µmol/L",
+        "1,0 mg/dL = 88 µmol/L"
+      ],
+      [
+        "Ureia",
+        "× 0,1665 mmol/L",
+        "40 mg/dL = 6,66 mmol/L"
+      ],
+      [
+        "Cálcio",
+        "× 0,2495 mmol/L",
+        "10 mg/dL = 2,50 mmol/L"
+      ],
+      [
+        "Ácido úrico",
+        "× 59,48 µmol/L",
+        "6 mg/dL = 357 µmol/L"
+      ],
+      [
+        "Bilirrubina",
+        "× 17,1 µmol/L",
+        "1 mg/dL = 17,1 µmol/L"
+      ]
+    ],
+    "tips": [
+      "Ureia e BUN não são a mesma coisa: artigos norte-americanos usam BUN (só o nitrogênio). Ureia de 40 mg/dL corresponde a BUN de cerca de 19 mg/dL.",
+      "Em mmol/L, ureia e BUN dão o mesmo número (1 mol de ureia tem 1 mol de BUN como molécula); por isso diretrizes em SI falam só em \"ureia\".",
+      "O fator dos triglicerídeos assume a massa molar da trioleína; é uma convenção, porque a amostra é uma mistura de triglicerídeos.",
+      "Hemoglobina glicada e cálcio corrigido pela albumina estão em outras ferramentas do portal."
+    ],
+    "sources": [
+      [
+        "Young DS. Implementation of SI units for clinical laboratory data: style specifications and conversion tables. Ann Intern Med, 1987.",
+        "https://doi.org/10.7326/0003-4819-106-1-114"
+      ]
+    ],
+    "cases": [
+      [
+        "Glicose 100 mg/dL: 5,55 mmol/L",
+        {
+          "an": "glicose",
+          "dir": "si",
+          "val": 100
+        },
+        {
+          "raw": {
+            "out": 5.551
+          },
+          "main": "5,55",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Creatinina 1,0 mg/dL: 88 µmol/L",
+        {
+          "an": "creatinina",
+          "dir": "si",
+          "val": 1
+        },
+        {
+          "raw": {
+            "out": 88.4
+          },
+          "main": "88",
+          "tol": 0.05
+        }
+      ],
+      [
+        "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        {
+          "an": "colesterol",
+          "dir": "conv",
+          "val": 5
+        },
+        {
+          "raw": {
+            "out": 193.33
+          },
+          "tol": 0.05
+        }
+      ],
+      [
+        "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        {
+          "an": "ureia",
+          "dir": "si",
+          "val": 40
+        },
+        {
+          "raw": {
+            "out": 6.66,
+            "bun": 18.657
+          },
+          "tol": 0.01
+        }
+      ],
+      [
+        "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        {
+          "an": "bun",
+          "dir": "si",
+          "val": 20
+        },
+        {
+          "raw": {
+            "out": 7.139,
+            "ureia": 42.88
+          },
+          "tol": 0.01
+        }
+      ],
+      [
+        "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        {
+          "an": "bilirrubina",
+          "dir": "conv",
+          "val": 17.1
+        },
+        {
+          "raw": {
+            "out": 1
+          },
+          "main": "1,0",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Cálcio 10 mg/dL: 2,50 mmol/L",
+        {
+          "an": "calcio",
+          "dir": "si",
+          "val": 10
+        },
+        {
+          "raw": {
+            "out": 2.495
+          },
+          "tol": 0.005
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 7,
+      "passed": 7,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

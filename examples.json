@@ -1,0 +1,147 @@
+[
+  {
+    "label": "Glicose 100 mg/dL: 5,55 mmol/L",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": 100
+    },
+    "expected": {
+      "raw": {
+        "out": 5.551
+      },
+      "main": "5,55",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "an": "glicose",
+      "dir": "si",
+      "val": 100
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Creatinina 1,0 mg/dL: 88 µmol/L",
+    "input": {
+      "an": "creatinina",
+      "dir": "si",
+      "val": 1
+    },
+    "expected": {
+      "raw": {
+        "out": 88.4
+      },
+      "main": "88",
+      "tol": 0.05
+    },
+    "originalInput": {
+      "an": "creatinina",
+      "dir": "si",
+      "val": 1
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+    "input": {
+      "an": "colesterol",
+      "dir": "conv",
+      "val": 5
+    },
+    "expected": {
+      "raw": {
+        "out": 193.33
+      },
+      "tol": 0.05
+    },
+    "originalInput": {
+      "an": "colesterol",
+      "dir": "conv",
+      "val": 5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+    "input": {
+      "an": "ureia",
+      "dir": "si",
+      "val": 40
+    },
+    "expected": {
+      "raw": {
+        "out": 6.66,
+        "bun": 18.657
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "an": "ureia",
+      "dir": "si",
+      "val": 40
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+    "input": {
+      "an": "bun",
+      "dir": "si",
+      "val": 20
+    },
+    "expected": {
+      "raw": {
+        "out": 7.139,
+        "ureia": 42.88
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "an": "bun",
+      "dir": "si",
+      "val": 20
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+    "input": {
+      "an": "bilirrubina",
+      "dir": "conv",
+      "val": 17.1
+    },
+    "expected": {
+      "raw": {
+        "out": 1
+      },
+      "main": "1,0",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "an": "bilirrubina",
+      "dir": "conv",
+      "val": 17.1
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Cálcio 10 mg/dL: 2,50 mmol/L",
+    "input": {
+      "an": "calcio",
+      "dir": "si",
+      "val": 10
+    },
+    "expected": {
+      "raw": {
+        "out": 2.495
+      },
+      "tol": 0.005
+    },
+    "originalInput": {
+      "an": "calcio",
+      "dir": "si",
+      "val": 10
+    },
+    "expandedZeroOptions": []
+  }
+]
