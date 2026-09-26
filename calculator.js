@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-conversao-de-unidades-laboratoriais · Elucenia · https://github.com/Elucenia/tool-conversao-de-unidades-laboratoriais
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"conversao-de-unidades-laboratoriais","title":"Conversão de unidades laboratoriais","fields":[["an","Exame","sel",{"opts":{"glicose":"Glicose","colesterol":"Colesterol (total, HDL, LDL)","triglicerideos":"Triglicerídeos","creatinina":"Creatinina","ureia":"Ureia","bun":"BUN (nitrogênio ureico)","calcio":"Cálcio total","acido_urico":"Ácido úrico","bilirrubina":"Bilirrubina"}}],["dir","Converter","radio",{"opts":{"si":"De mg/dL para SI","conv":"De SI para mg/dL"}}],["val","Valor","num",{"min":0,"max":100000,"step":0.001,"unit":"","ph":"100"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
