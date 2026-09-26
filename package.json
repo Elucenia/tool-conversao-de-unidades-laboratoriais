@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-conversao-de-unidades-laboratoriais",
   "version": "0.1.0",
-  "description": "Conversão de unidades laboratoriais · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Conversão de unidades laboratoriais · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
