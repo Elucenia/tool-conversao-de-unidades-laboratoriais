@@ -1,0 +1,1375 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "conversao-de-unidades-laboratoriais",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/conversao-de-unidades-laboratoriais/calculator.js",
+    "sha256": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb",
+    "bytes": 5776
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 7,
+    "replayed": 7,
+    "passed": 7,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+      "originalInput": {
+        "an": "glicose",
+        "dir": "si",
+        "val": 100
+      },
+      "input": {
+        "an": "glicose",
+        "dir": "si",
+        "val": 100
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 5.551
+        },
+        "main": "5,55",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "5,55",
+          "mmol/L"
+        ],
+        "label": "Glicose em unidade SI",
+        "raw": {
+          "out": 5.550621669626999
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "glicose",
+            "dir": "si",
+            "val": 100
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:19.669Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "5,55",
+                "mmol/L"
+              ],
+              "label": "Glicose em unidade SI",
+              "raw": {
+                "out": 5.550621669626999
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1ec24cdea823f20dcec3dea699aca0155d926f11327c44fa6ff882c65dcf8ab3",
+          "bytes": 181,
+          "elapsedMs": 4.836600000002363
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:19.669Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "5,55",
+              "mmol/L"
+            ],
+            "label": "Glicose em unidade SI",
+            "raw": {
+              "out": 5.550621669626999
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1ec24cdea823f20dcec3dea699aca0155d926f11327c44fa6ff882c65dcf8ab3",
+        "bytes": 181,
+        "elapsedMs": 4.836600000002363
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "5,55",
+            "obtained": "5,55",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 5.551,
+            "obtained": 5.550621669626999,
+            "tolerance": 0.005,
+            "difference": 0.00037833037300138983,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 5.550621669626999,
+            "obtained": 5.550621669626999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5,55",
+            "obtained": "5,55",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmol/L",
+            "obtained": "mmol/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+      "originalInput": {
+        "an": "creatinina",
+        "dir": "si",
+        "val": 1
+      },
+      "input": {
+        "an": "creatinina",
+        "dir": "si",
+        "val": 1
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 88.4
+        },
+        "main": "88",
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "88",
+          "µmol/L"
+        ],
+        "label": "Creatinina em unidade SI",
+        "raw": {
+          "out": 88.4016973125884
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "creatinina",
+            "dir": "si",
+            "val": 1
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:19.983Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "88",
+                "µmol/L"
+              ],
+              "label": "Creatinina em unidade SI",
+              "raw": {
+                "out": 88.4016973125884
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "482c4533bf4c45a5722fd8548ac7f1ab8af5b64b63528b95a9598a551619bdd7",
+          "bytes": 182,
+          "elapsedMs": 6.946800000005169
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:19.983Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "88",
+              "µmol/L"
+            ],
+            "label": "Creatinina em unidade SI",
+            "raw": {
+              "out": 88.4016973125884
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "482c4533bf4c45a5722fd8548ac7f1ab8af5b64b63528b95a9598a551619bdd7",
+        "bytes": 182,
+        "elapsedMs": 6.946800000005169
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "88",
+            "obtained": "88",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 88.4,
+            "obtained": 88.4016973125884,
+            "tolerance": 0.05,
+            "difference": 0.001697312588390787,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 88.4016973125884,
+            "obtained": 88.4016973125884,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "88",
+            "obtained": "88",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "µmol/L",
+            "obtained": "µmol/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+      "originalInput": {
+        "an": "colesterol",
+        "dir": "conv",
+        "val": 5
+      },
+      "input": {
+        "an": "colesterol",
+        "dir": "conv",
+        "val": 5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 193.33
+        },
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "193",
+          "mg/dL"
+        ],
+        "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+        "raw": {
+          "out": 193.325
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "colesterol",
+            "dir": "conv",
+            "val": 5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:20.296Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "193",
+                "mg/dL"
+              ],
+              "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+              "raw": {
+                "out": 193.325
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6956d0341841a34355fcef68d27a21bfe66169b53aec3b3494f14876e62c40f7",
+          "bytes": 202,
+          "elapsedMs": 5.441399999996065
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:20.296Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "193",
+              "mg/dL"
+            ],
+            "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+            "raw": {
+              "out": 193.325
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6956d0341841a34355fcef68d27a21bfe66169b53aec3b3494f14876e62c40f7",
+        "bytes": 202,
+        "elapsedMs": 5.441399999996065
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 193.33,
+            "obtained": 193.325,
+            "tolerance": 0.05,
+            "difference": 0.005000000000023874,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 193.325,
+            "obtained": 193.325,
+            "tolerance": 1.9332499999999998e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "193",
+            "obtained": "193",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+      "originalInput": {
+        "an": "ureia",
+        "dir": "si",
+        "val": 40
+      },
+      "input": {
+        "an": "ureia",
+        "dir": "si",
+        "val": 40
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 6.66,
+          "bun": 18.657
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "6,66",
+          "mmol/L"
+        ],
+        "label": "Ureia em unidade SI",
+        "raw": {
+          "out": 6.66000666000666,
+          "bun": 18.657342657342657
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "ureia",
+            "dir": "si",
+            "val": 40
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:20.608Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "6,66",
+                "mmol/L"
+              ],
+              "label": "Ureia em unidade SI",
+              "raw": {
+                "out": 6.66000666000666,
+                "bun": 18.657342657342657
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e52e6e8ed95c07b4b28b79812282f5413d409cb11c69bb480b0d14b3e29f0d19",
+          "bytes": 203,
+          "elapsedMs": 4.723000000005413
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:20.608Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "6,66",
+              "mmol/L"
+            ],
+            "label": "Ureia em unidade SI",
+            "raw": {
+              "out": 6.66000666000666,
+              "bun": 18.657342657342657
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e52e6e8ed95c07b4b28b79812282f5413d409cb11c69bb480b0d14b3e29f0d19",
+        "bytes": 203,
+        "elapsedMs": 4.723000000005413
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 6.66,
+            "obtained": 6.66000666000666,
+            "tolerance": 0.01,
+            "difference": 0.0000066600066599420416,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.bun",
+            "expected": 18.657,
+            "obtained": 18.657342657342657,
+            "tolerance": 0.01,
+            "difference": 0.00034265734265659376,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 6.66000666000666,
+            "obtained": 6.66000666000666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.bun",
+            "expected": 18.657342657342657,
+            "obtained": 18.657342657342657,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6,66",
+            "obtained": "6,66",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmol/L",
+            "obtained": "mmol/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+      "originalInput": {
+        "an": "bun",
+        "dir": "si",
+        "val": 20
+      },
+      "input": {
+        "an": "bun",
+        "dir": "si",
+        "val": 20
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 7.139,
+          "ureia": 42.88
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "7,14",
+          "mmol/L de ureia"
+        ],
+        "label": "BUN (nitrogênio ureico) em unidade SI",
+        "raw": {
+          "out": 7.139287499107589,
+          "ureia": 42.87856071964018
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "bun",
+            "dir": "si",
+            "val": 20
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:20.921Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "7,14",
+                "mmol/L de ureia"
+              ],
+              "label": "BUN (nitrogênio ureico) em unidade SI",
+              "raw": {
+                "out": 7.139287499107589,
+                "ureia": 42.87856071964018
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "9c7a984fe4bac9c843e9ac7c78bdd72c44bcf7c6da152ec039a27b2374fa01ff",
+          "bytes": 233,
+          "elapsedMs": 2.9398000000001048
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:20.921Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "7,14",
+              "mmol/L de ureia"
+            ],
+            "label": "BUN (nitrogênio ureico) em unidade SI",
+            "raw": {
+              "out": 7.139287499107589,
+              "ureia": 42.87856071964018
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "9c7a984fe4bac9c843e9ac7c78bdd72c44bcf7c6da152ec039a27b2374fa01ff",
+        "bytes": 233,
+        "elapsedMs": 2.9398000000001048
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 7.139,
+            "obtained": 7.139287499107589,
+            "tolerance": 0.01,
+            "difference": 0.0002874991075891842,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.ureia",
+            "expected": 42.88,
+            "obtained": 42.87856071964018,
+            "tolerance": 0.01,
+            "difference": 0.0014392803598255455,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 7.139287499107589,
+            "obtained": 7.139287499107589,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ureia",
+            "expected": 42.87856071964018,
+            "obtained": 42.87856071964018,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,14",
+            "obtained": "7,14",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmol/L de ureia",
+            "obtained": "mmol/L de ureia",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+      "originalInput": {
+        "an": "bilirrubina",
+        "dir": "conv",
+        "val": 17.1
+      },
+      "input": {
+        "an": "bilirrubina",
+        "dir": "conv",
+        "val": 17.1
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 1
+        },
+        "main": "1,0",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "1,0",
+          "mg/dL"
+        ],
+        "label": "Bilirrubina em unidade convencional",
+        "raw": {
+          "out": 0.9997686
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "bilirrubina",
+            "dir": "conv",
+            "val": 17.1
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:21.232Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "1,0",
+                "mg/dL"
+              ],
+              "label": "Bilirrubina em unidade convencional",
+              "raw": {
+                "out": 0.9997686
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "9ac070ceaab0a9deaa359c5398f66fd83b8a6bffa1fc64c55455eff075cd7473",
+          "bytes": 185,
+          "elapsedMs": 11.523200000003271
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:21.232Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "1,0",
+              "mg/dL"
+            ],
+            "label": "Bilirrubina em unidade convencional",
+            "raw": {
+              "out": 0.9997686
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "9ac070ceaab0a9deaa359c5398f66fd83b8a6bffa1fc64c55455eff075cd7473",
+        "bytes": 185,
+        "elapsedMs": 11.523200000003271
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "1,0",
+            "obtained": "1,0",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 1,
+            "obtained": 0.9997686,
+            "tolerance": 0.005,
+            "difference": 0.00023139999999999272,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 0.9997686,
+            "obtained": 0.9997686,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1,0",
+            "obtained": "1,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-unidades-laboratoriais",
+      "kind": "native-source-reference",
+      "index": 6,
+      "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+      "originalInput": {
+        "an": "calcio",
+        "dir": "si",
+        "val": 10
+      },
+      "input": {
+        "an": "calcio",
+        "dir": "si",
+        "val": 10
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "out": 2.495
+        },
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "2,50",
+          "mmol/L"
+        ],
+        "label": "Cálcio total em unidade SI",
+        "raw": {
+          "out": 2.4950099800399204
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "an": "calcio",
+            "dir": "si",
+            "val": 10
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+          "startedAt": "2026-10-05T17:36:21.541Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-unidades-laboratoriais",
+              "main": [
+                "2,50",
+                "mmol/L"
+              ],
+              "label": "Cálcio total em unidade SI",
+              "raw": {
+                "out": 2.4950099800399204
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "080e11902ff7c1d5c563d0990deab22a759e268cde807337b74ea6c6daf75319",
+          "bytes": 188,
+          "elapsedMs": 4.983700000004319
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-unidades-laboratoriais/calculate",
+        "startedAt": "2026-10-05T17:36:21.541Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-unidades-laboratoriais",
+            "main": [
+              "2,50",
+              "mmol/L"
+            ],
+            "label": "Cálcio total em unidade SI",
+            "raw": {
+              "out": 2.4950099800399204
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "080e11902ff7c1d5c563d0990deab22a759e268cde807337b74ea6c6daf75319",
+        "bytes": 188,
+        "elapsedMs": 4.983700000004319
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.out",
+            "expected": 2.495,
+            "obtained": 2.4950099800399204,
+            "tolerance": 0.005,
+            "difference": 0.000009980039920254313,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.out",
+            "expected": 2.4950099800399204,
+            "obtained": 2.4950099800399204,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2,50",
+            "obtained": "2,50",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmol/L",
+            "obtained": "mmol/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
