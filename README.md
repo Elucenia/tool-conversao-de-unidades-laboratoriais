@@ -1,60 +1,32 @@
 # Conversão de unidades laboratoriais
 
-Identificador: `conversao-de-unidades-laboratoriais`. Pacote independente da plataforma ELUCENIA, para navegador e Node.js.
+ELUCENIA · Felipe Guedes. Current isolated per-tool source candidate.
 
-## Situação
+## Documentation in ten languages
 
-- Revisão: **needs-review**. Revisão documental e clínica independente pendente.
-- Execução: **disponível para reprodução técnica da fórmula**.
-- Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 7 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 40 comparações conformes.
-- Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
+- [Português (Brasil)](documentation/pt-BR.md) · [ELUCENIA](https://elucenia.org/pt-br/ferramentas/conversao-de-unidades-laboratoriais)
+- [English](documentation/en.md) · [ELUCENIA](https://elucenia.org/en/tools/conversao-de-unidades-laboratoriais)
+- [Español](documentation/es.md) · [ELUCENIA](https://elucenia.org/es/herramientas/conversao-de-unidades-laboratoriais)
+- [Français](documentation/fr.md) · [ELUCENIA](https://elucenia.org/fr/outils/conversao-de-unidades-laboratoriais)
+- [Deutsch](documentation/de.md) · [ELUCENIA](https://elucenia.org/de/werkzeuge/conversao-de-unidades-laboratoriais)
+- [Italiano](documentation/it.md) · [ELUCENIA](https://elucenia.org/it/strumenti/conversao-de-unidades-laboratoriais)
+- [العربية](documentation/ar.md) · [ELUCENIA](https://elucenia.org/ar/tools/conversao-de-unidades-laboratoriais)
+- [中文](documentation/zh.md) · [ELUCENIA](https://elucenia.org/zh/tools/conversao-de-unidades-laboratoriais)
+- [日本語](documentation/ja.md) · [ELUCENIA](https://elucenia.org/ja/tools/conversao-de-unidades-laboratoriais)
+- [हिन्दी](documentation/hi.md) · [ELUCENIA](https://elucenia.org/hi/tools/conversao-de-unidades-laboratoriais)
 
-## Uso no Node.js
+The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-```js
-const { calculate } = require('./calculator.js');
-const example = require('./examples.json')[0];
-console.log(calculate(example.input));
-```
+## Local use and tests
 
-Execute `node test.cjs` (ou `npm test`) para conferir os exemplos. Abra `index.html` para usar a versão local do navegador. Não há dependências npm.
+Serve this directory with a static HTTP server and open index.html. The demonstration calculates locally and supports the ten linked authorial interface/documentation editions. Node: require("./calculator.js").calculate(input). Run `node test.cjs` or `npm test` to replay all 7 documented source examples and 20 schema/domain rejection cases. Tests verify the package files before executing and write no files. No dependency install, remote calculation API, account or app source tree is required.
 
-## Contrato
+## Edition and evidence
 
-`calculate(input)` recebe um objeto, devolve `{id, main, label, raw, clinicalValidation}` ou `{error, code, field?}`. Consulte `tool.json` e `metadata.fields` para nomes, unidades, opções e intervalos. Números aceitam valores finitos ou strings numéricas; opções precisam corresponder às chaves documentadas. Campos obrigatórios vazios, booleanos inválidos, valores fora de intervalo e resultados não finitos são rejeitados. Somente checkbox omitido representa falso; um campo numérico ou uma opção obrigatória nunca é preenchido automaticamente.
+Conversões SI/Young 1987:massa molar e fatores arredondados explicitados; BUN≠ureia
 
-Interpretações, ordens terapêuticas e tabelas herdadas não são retornadas pelo adaptador. Classificações e valores ainda dependem da população e das limitações da fonte.
+results.json records fresh current source and packaged browser VM parity. Browser VM is an isolated JavaScript realm, not a real browser UI/hydration journey. The new served HTTP R6 replay is pending and will be attached only after completion. Existing synthetic source expectations are not a newly derived clinical oracle. Independent clinical and professional language approval have not been performed.
 
-## Fórmula / versão
+## Source and licence scope
 
-mmol/L = mg/dL × 10 ÷ massa molar; µmol/L = mg/dL × 10.000 ÷ massa molar.Glicose (180,16 g/mol): × 0,0555 · colesterol (386,65): × 0,02586 · triglicerídeos (como trioleína, 885,7): × 0,01129Creatinina (113,12): × 88,4 µmol/L · ácido úrico (168,11): × 59,48 µmol/L · bilirrubina (584,66): × 17,1 µmol/LUreia (60,06): × 0,1665 · BUN (28 g de nitrogênio por mol de ureia): × 0,357 mmol/L de ureia · BUN = ureia × 0,466 (ureia = BUN × 2,14)Cálcio (40,08): × 0,2495
-
-A transcrição acima documenta o acervo de origem e pode requerer atualização. 
-
-## Condições e limites
-
-Converte os exames bioquímicos mais comuns entre a unidade convencional (mg/dL) e a do Sistema Internacional, para ler artigos e diretrizes estrangeiras.
-
-Confirme população, exclusões, unidades, versão e diretriz aplicável ao país e serviço. O resultado não deve ser utilizado isoladamente para diagnóstico, alta ou prescrição. O pacote não representa certificação clínica, aprovação regulatória ou indicação para toda população. Veja a revisão completa em `tool.json`.
-
-## Fontes originais
-
-- [Young DS. Implementation of SI units for clinical laboratory data: style specifications and conversion tables. Ann Intern Med, 1987.](https://doi.org/10.7326/0003-4819-106-1-114)
-
-## Exemplos e rastreabilidade
-
-`examples.json` preserva `originalInput`, expectativa e entrada explícita do exemplo. Não foi necessário expandir opções zero nos exemplos.
-
-## O que esta ferramenta não faz
-
-- Não diagnostica, não prescreve e não substitui a avaliação de um médico. O resultado é a reprodução técnica de uma fórmula ou escore publicado.
-- Não envia dados a lugar nenhum: roda no navegador ou no Node.js, sem rede, sem telemetria, sem armazenamento.
-- Não guarda nem identifica pacientes. Não use com dados identificáveis fora de um ambiente que você controla.
-- Não tem validação clínica independente nem aprovação regulatória (ver "Situação").
-
-## Autoria e licença
-
-Criado e mantido por **Felipe Guedes** (Engenheiro de Software e Arquiteto de Sistemas, Toledo, Paraná, Brasil) para a **ELUCENIA**, uma cadeia médica e científica global para acelerar a descoberta. Criado em 2026-09-25 na organização [github.com/Elucenia](https://github.com/Elucenia).
-
-Licença **Apache-2.0** (arquivo `LICENSE`): você pode usar, copiar, modificar e embutir este código no seu site ou sistema, inclusive comercial, desde que mantenha o arquivo `NOTICE` e o aviso de copyright e declare as modificações. A licença cobre o código deste pacote; instrumentos, questionários, tabelas, traduções e marcas citados nas fontes mantêm os direitos dos seus titulares (ver `NOTICE`). Detalhes em `AUTHORSHIP.md`, `CITATION.cff`, `SECURITY.md` e `CONTRIBUTING.md`. Contato: contato@elucenia.org.
+Scientific sources, inputs, units, formula and population limits are recorded in tool.json and the ten documentation files. Original Apache attribution files and current MIT component notices are preserved without rewriting. CODE-COMPONENTS.md maps the licences. SOURCE-RIGHTS-REVIEW.md records the separate third-party questionnaire/instrument-expression and translation review scope. No instrument-wide permission or official endorsement is claimed.

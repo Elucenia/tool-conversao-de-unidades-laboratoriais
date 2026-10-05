@@ -5,13 +5,13 @@
     "short": "mg/dL ↔ mmol/L ou µmol/L (unidades SI)",
     "desc": "Converte glicose, colesterol, triglicerídeos, creatinina, ureia, BUN, cálcio, ácido úrico e bilirrubina entre mg/dL e unidades SI (mmol/L ou µmol/L).",
     "lead": "Converte os exames bioquímicos mais comuns entre a unidade convencional (mg/dL) e a do Sistema Internacional, para ler artigos e diretrizes estrangeiras.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-laboratorial",
       "clinica-medica",
       "nefrologia",
       "endocrinologia-e-metabologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "an",
@@ -56,63 +56,14 @@
       ]
     ],
     "formula": "<p>mmol/L = mg/dL × 10 ÷ massa molar; µmol/L = mg/dL × 10.000 ÷ massa molar.</p><ul><li>Glicose (180,16 g/mol): × 0,0555 · colesterol (386,65): × 0,02586 · triglicerídeos (como trioleína, 885,7): × 0,01129</li><li>Creatinina (113,12): × 88,4 µmol/L · ácido úrico (168,11): × 59,48 µmol/L · bilirrubina (584,66): × 17,1 µmol/L</li><li>Ureia (60,06): × 0,1665 · BUN (28 g de nitrogênio por mol de ureia): × 0,357 mmol/L de ureia · <strong>BUN = ureia × 0,466</strong> (ureia = BUN × 2,14)</li><li>Cálcio (40,08): × 0,2495</li></ul>",
-    "table": [
-      [
-        "Exame",
-        "mg/dL → SI",
-        "Exemplo"
-      ],
-      [
-        "Glicose",
-        "× 0,0555 mmol/L",
-        "100 mg/dL = 5,55 mmol/L"
-      ],
-      [
-        "Colesterol",
-        "× 0,0259 mmol/L",
-        "200 mg/dL = 5,17 mmol/L"
-      ],
-      [
-        "Triglicerídeos",
-        "× 0,0113 mmol/L",
-        "150 mg/dL = 1,69 mmol/L"
-      ],
-      [
-        "Creatinina",
-        "× 88,4 µmol/L",
-        "1,0 mg/dL = 88 µmol/L"
-      ],
-      [
-        "Ureia",
-        "× 0,1665 mmol/L",
-        "40 mg/dL = 6,66 mmol/L"
-      ],
-      [
-        "Cálcio",
-        "× 0,2495 mmol/L",
-        "10 mg/dL = 2,50 mmol/L"
-      ],
-      [
-        "Ácido úrico",
-        "× 59,48 µmol/L",
-        "6 mg/dL = 357 µmol/L"
-      ],
-      [
-        "Bilirrubina",
-        "× 17,1 µmol/L",
-        "1 mg/dL = 17,1 µmol/L"
-      ]
-    ],
-    "tips": [
-      "Ureia e BUN não são a mesma coisa: artigos norte-americanos usam BUN (só o nitrogênio). Ureia de 40 mg/dL corresponde a BUN de cerca de 19 mg/dL.",
-      "Em mmol/L, ureia e BUN dão o mesmo número (1 mol de ureia tem 1 mol de BUN como molécula); por isso diretrizes em SI falam só em \"ureia\".",
-      "O fator dos triglicerídeos assume a massa molar da trioleína; é uma convenção, porque a amostra é uma mistura de triglicerídeos.",
-      "Hemoglobina glicada e cálcio corrigido pela albumina estão em outras ferramentas do portal."
-    ],
     "sources": [
       [
         "Young DS. Implementation of SI units for clinical laboratory data: style specifications and conversion tables. Ann Intern Med, 1987.",
         "https://doi.org/10.7326/0003-4819-106-1-114"
+      ],
+      [
+        "BIPM,SI9th edition,version1.11",
+        "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?download=true&t=1671101192839&version=1.11"
       ]
     ],
     "cases": [
@@ -220,9 +171,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -231,17 +179,148 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 3,
+      "passed": 3,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Conversões SI/Young 1987:massa molar e fatores arredondados explicitados; BUN≠ureia",
+    "implementationVersion": "conversao-de-unidades-laboratoriais@native-2026-10-03+bbd17ff12b68",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3789557/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "mmol/L = mg/dL × 10 ÷ massa molar; µmol/L = mg/dL × 10.000 ÷ massa molar. Glicose (180,16 g/mol): × 0,0555 · colesterol (386,65): × 0,02586 · triglicerídeos (como trioleína, 885,7): × 0,01129 Creatinina (113,12): × 88,4 µmol/L · ácido úrico (168,11): × 59,48 µmol/L · bilirrubina (584,66): × 17,1 µmol/L Ureia (60,06): × 0,1665 · BUN (28 g de nitrogênio por mol de ureia): × 0,357 mmol/L de ureia · BUN = ureia × 0,466 (ureia = BUN × 2,14) Cálcio (40,08): × 0,2495",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "an",
+            "label": "Exame",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "glicose": "Glicose",
+              "colesterol": "Colesterol (total, HDL, LDL)",
+              "triglicerideos": "Triglicerídeos",
+              "creatinina": "Creatinina",
+              "ureia": "Ureia",
+              "bun": "BUN (nitrogênio ureico)",
+              "calcio": "Cálcio total",
+              "acido_urico": "Ácido úrico",
+              "bilirrubina": "Bilirrubina"
+            }
+          },
+          {
+            "key": "dir",
+            "label": "Converter",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "si": "De mg/dL para SI",
+              "conv": "De SI para mg/dL"
+            }
+          },
+          {
+            "key": "val",
+            "label": "Valor",
+            "type": "num",
+            "min": 0,
+            "max": 100000,
+            "unit": "",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "7ccfe108d3f2f158a8332f520093f279907521ed595a5641377fdc84a0856fcd"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Young DS. Implementation of SI units for clinical laboratory data: style specifications and conversion tables. Ann Intern Med, 1987.",
+          "url": "https://doi.org/10.7326/0003-4819-106-1-114",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Implementation of SI units for clinical laboratory data. Style specifications and conversion tables.",
+            "year": "1987",
+            "firstPublicationDate": "1987-01-01",
+            "doi": "10.7326/0003-4819-106-1-114",
+            "pmid": "3789557",
+            "journal": "Annals of internal medicine",
+            "authors": "Young DS."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3789557/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 3,
+        "passed": 3,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "c1b3243261f0d5c1255a2671bb3a8c76c491b82d820a120fda3f30f40f732777",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb"
+    },
+    "limits": "Selecione o analito e a unidade: concentração de massa e concentração de quantidade de substância são grandezas diferentes, ligadas pela massa molar da entidade especificada. Os fatores desta interface são arredondados; triglicerídeos usam a base trioleína. BUN expressa nitrogênio ureico e não a massa de ureia, portanto não são intercambiáveis. A conversão não altera o método laboratorial nem estabelece intervalo de referência. As tabelas originais de Young 1987 não foram integralmente conferidas; não se declara certificação de todos os fatores por essa fonte.",
+    "limitsEvidence": {
+      "status": "direct-primary-SI-sections-read-clinical-table-conformance-incomplete",
+      "sources": [
+        {
+          "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?download=true&t=1671101192839&version=1.11",
+          "edition": "BIPM,SI9th edition,version1.11",
+          "readScope": "Direct primary institutional PDF:p134 mole/entity,p140 quantity distinction,p148–149 notation,and mass/molar-mass relation. Named sections only."
+        },
+        {
+          "url": "https://doi.org/10.7326/0003-4819-106-1-114",
+          "edition": "Young1987",
+          "readScope": "Bibliographic identity only;original conversion tables not retrieved/read."
+        }
+      ],
+      "populationScope": "Chemical quantity conversion with specified analyte and molecular basis.",
+      "remainingChecks": [
+        "Young1987 original table inaccessible in this review.",
+        "All current factors not independently certified against a primary clinical conversion table."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/conversao-de-unidades-laboratoriais/calculator.js",
+    "bytes": 5776,
+    "sha256": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "754228a00f0285579a67ee6c87ea6293eff107a46a55fde72396b5d77d6002d7",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 3,
+      "sha256": "446cd98bc462a9fd1e35fed3d7b7d06cfc299948fd23c815335860dfcc7f28d5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

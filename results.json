@@ -1,0 +1,606 @@
+{
+  "id": "conversao-de-unidades-laboratoriais",
+  "at": "2026-10-05T17:29:14.255Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/conversao-de-unidades-laboratoriais/calculator.js",
+    "bytes": 5776,
+    "sha256": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb"
+  },
+  "cases": [
+    {
+      "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+      "input": {
+        "an": "glicose",
+        "dir": "si",
+        "val": 100
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "5,55",
+          "mmol/L"
+        ],
+        "label": "Glicose em unidade SI",
+        "raw": {
+          "out": 5.550621669626999
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "5,55",
+          "obtained": "5,55",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 5.551,
+          "obtained": 5.550621669626999,
+          "tolerance": 0.005,
+          "difference": 0.00037833037300138983,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 5.550621669626999,
+          "obtained": 5.550621669626999,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "5,55",
+          "obtained": "5,55",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mmol/L",
+          "obtained": "mmol/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+      "input": {
+        "an": "creatinina",
+        "dir": "si",
+        "val": 1
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "88",
+          "µmol/L"
+        ],
+        "label": "Creatinina em unidade SI",
+        "raw": {
+          "out": 88.4016973125884
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "88",
+          "obtained": "88",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 88.4,
+          "obtained": 88.4016973125884,
+          "tolerance": 0.05,
+          "difference": 0.001697312588390787,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 88.4016973125884,
+          "obtained": 88.4016973125884,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "88",
+          "obtained": "88",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "µmol/L",
+          "obtained": "µmol/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+      "input": {
+        "an": "colesterol",
+        "dir": "conv",
+        "val": 5
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "193",
+          "mg/dL"
+        ],
+        "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+        "raw": {
+          "out": 193.325
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 193.33,
+          "obtained": 193.325,
+          "tolerance": 0.05,
+          "difference": 0.005000000000023874,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 193.325,
+          "obtained": 193.325,
+          "tolerance": 1.9332499999999998e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "193",
+          "obtained": "193",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+      "input": {
+        "an": "ureia",
+        "dir": "si",
+        "val": 40
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "6,66",
+          "mmol/L"
+        ],
+        "label": "Ureia em unidade SI",
+        "raw": {
+          "out": 6.66000666000666,
+          "bun": 18.657342657342657
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 6.66,
+          "obtained": 6.66000666000666,
+          "tolerance": 0.01,
+          "difference": 0.0000066600066599420416,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.bun",
+          "expected": 18.657,
+          "obtained": 18.657342657342657,
+          "tolerance": 0.01,
+          "difference": 0.00034265734265659376,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 6.66000666000666,
+          "obtained": 6.66000666000666,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.bun",
+          "expected": 18.657342657342657,
+          "obtained": 18.657342657342657,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "6,66",
+          "obtained": "6,66",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mmol/L",
+          "obtained": "mmol/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+      "input": {
+        "an": "bun",
+        "dir": "si",
+        "val": 20
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "7,14",
+          "mmol/L de ureia"
+        ],
+        "label": "BUN (nitrogênio ureico) em unidade SI",
+        "raw": {
+          "out": 7.139287499107589,
+          "ureia": 42.87856071964018
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 7.139,
+          "obtained": 7.139287499107589,
+          "tolerance": 0.01,
+          "difference": 0.0002874991075891842,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.ureia",
+          "expected": 42.88,
+          "obtained": 42.87856071964018,
+          "tolerance": 0.01,
+          "difference": 0.0014392803598255455,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 7.139287499107589,
+          "obtained": 7.139287499107589,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ureia",
+          "expected": 42.87856071964018,
+          "obtained": 42.87856071964018,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7,14",
+          "obtained": "7,14",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mmol/L de ureia",
+          "obtained": "mmol/L de ureia",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+      "input": {
+        "an": "bilirrubina",
+        "dir": "conv",
+        "val": 17.1
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "1,0",
+          "mg/dL"
+        ],
+        "label": "Bilirrubina em unidade convencional",
+        "raw": {
+          "out": 0.9997686
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "1,0",
+          "obtained": "1,0",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 1,
+          "obtained": 0.9997686,
+          "tolerance": 0.005,
+          "difference": 0.00023139999999999272,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 0.9997686,
+          "obtained": 0.9997686,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,0",
+          "obtained": "1,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+      "input": {
+        "an": "calcio",
+        "dir": "si",
+        "val": 10
+      },
+      "obtained": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "2,50",
+          "mmol/L"
+        ],
+        "label": "Cálcio total em unidade SI",
+        "raw": {
+          "out": 2.4950099800399204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.out",
+          "expected": 2.495,
+          "obtained": 2.4950099800399204,
+          "tolerance": 0.005,
+          "difference": 0.000009980039920254313,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.out",
+          "expected": 2.4950099800399204,
+          "obtained": 2.4950099800399204,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2,50",
+          "obtained": "2,50",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mmol/L",
+          "obtained": "mmol/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 20,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

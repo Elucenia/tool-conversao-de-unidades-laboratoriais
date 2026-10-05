@@ -1,6 +1,14 @@
 [
   {
-    "label": "Glicose 100 mg/dL: 5,55 mmol/L",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+    "originalInput": {
+      "an": "glicose",
+      "dir": "si",
+      "val": 100
+    },
     "input": {
       "an": "glicose",
       "dir": "si",
@@ -13,15 +21,35 @@
       "main": "5,55",
       "tol": 0.005
     },
-    "originalInput": {
-      "an": "glicose",
-      "dir": "si",
-      "val": 100
+    "recordedResult": {
+      "main": [
+        "5,55",
+        "mmol/L"
+      ],
+      "label": "Glicose em unidade SI",
+      "raw": {
+        "out": 5.550621669626999
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Creatinina 1,0 mg/dL: 88 µmol/L",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+    "originalInput": {
+      "an": "creatinina",
+      "dir": "si",
+      "val": 1
+    },
     "input": {
       "an": "creatinina",
       "dir": "si",
@@ -34,15 +62,35 @@
       "main": "88",
       "tol": 0.05
     },
-    "originalInput": {
-      "an": "creatinina",
-      "dir": "si",
-      "val": 1
+    "recordedResult": {
+      "main": [
+        "88",
+        "µmol/L"
+      ],
+      "label": "Creatinina em unidade SI",
+      "raw": {
+        "out": 88.4016973125884
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+    "originalInput": {
+      "an": "colesterol",
+      "dir": "conv",
+      "val": 5
+    },
     "input": {
       "an": "colesterol",
       "dir": "conv",
@@ -54,15 +102,35 @@
       },
       "tol": 0.05
     },
-    "originalInput": {
-      "an": "colesterol",
-      "dir": "conv",
-      "val": 5
+    "recordedResult": {
+      "main": [
+        "193",
+        "mg/dL"
+      ],
+      "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+      "raw": {
+        "out": 193.325
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+    "originalInput": {
+      "an": "ureia",
+      "dir": "si",
+      "val": 40
+    },
     "input": {
       "an": "ureia",
       "dir": "si",
@@ -75,15 +143,36 @@
       },
       "tol": 0.01
     },
-    "originalInput": {
-      "an": "ureia",
-      "dir": "si",
-      "val": 40
+    "recordedResult": {
+      "main": [
+        "6,66",
+        "mmol/L"
+      ],
+      "label": "Ureia em unidade SI",
+      "raw": {
+        "out": 6.66000666000666,
+        "bun": 18.657342657342657
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+    "originalInput": {
+      "an": "bun",
+      "dir": "si",
+      "val": 20
+    },
     "input": {
       "an": "bun",
       "dir": "si",
@@ -96,15 +185,36 @@
       },
       "tol": 0.01
     },
-    "originalInput": {
-      "an": "bun",
-      "dir": "si",
-      "val": 20
+    "recordedResult": {
+      "main": [
+        "7,14",
+        "mmol/L de ureia"
+      ],
+      "label": "BUN (nitrogênio ureico) em unidade SI",
+      "raw": {
+        "out": 7.139287499107589,
+        "ureia": 42.87856071964018
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+    "originalInput": {
+      "an": "bilirrubina",
+      "dir": "conv",
+      "val": 17.1
+    },
     "input": {
       "an": "bilirrubina",
       "dir": "conv",
@@ -117,15 +227,35 @@
       "main": "1,0",
       "tol": 0.005
     },
-    "originalInput": {
-      "an": "bilirrubina",
-      "dir": "conv",
-      "val": 17.1
+    "recordedResult": {
+      "main": [
+        "1,0",
+        "mg/dL"
+      ],
+      "label": "Bilirrubina em unidade convencional",
+      "raw": {
+        "out": 0.9997686
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Cálcio 10 mg/dL: 2,50 mmol/L",
+    "id": "conversao-de-unidades-laboratoriais",
+    "kind": "native-source-reference",
+    "index": 6,
+    "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+    "originalInput": {
+      "an": "calcio",
+      "dir": "si",
+      "val": 10
+    },
     "input": {
       "an": "calcio",
       "dir": "si",
@@ -137,11 +267,23 @@
       },
       "tol": 0.005
     },
-    "originalInput": {
-      "an": "calcio",
-      "dir": "si",
-      "val": 10
+    "recordedResult": {
+      "main": [
+        "2,50",
+        "mmol/L"
+      ],
+      "label": "Cálcio total em unidade SI",
+      "raw": {
+        "out": 2.4950099800399204
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

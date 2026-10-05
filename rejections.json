@@ -1,0 +1,243 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field an",
+    "input": {
+      "dir": "si",
+      "val": 100
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "an"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field an",
+    "input": {
+      "an": "",
+      "dir": "si",
+      "val": 100
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "an"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option an",
+    "input": {
+      "an": "__ELUCENIA_INVALID_OPTION__",
+      "dir": "si",
+      "val": 100
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "an"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dir",
+    "input": {
+      "an": "glicose",
+      "val": 100
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dir",
+    "input": {
+      "an": "glicose",
+      "dir": "",
+      "val": 100
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option dir",
+    "input": {
+      "an": "glicose",
+      "dir": "__ELUCENIA_INVALID_OPTION__",
+      "val": 100
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "dir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field val",
+    "input": {
+      "an": "glicose",
+      "dir": "si"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum val",
+    "input": {
+      "an": "glicose",
+      "dir": "si",
+      "val": 110000
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "val"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
