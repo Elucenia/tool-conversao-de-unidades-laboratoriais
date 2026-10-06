@@ -188,7 +188,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Conversões SI/Young 1987:massa molar e fatores arredondados explicitados; BUN≠ureia",
-    "implementationVersion": "conversao-de-unidades-laboratoriais@native-2026-10-03+bbd17ff12b68",
+    "implementationVersion": "conversao-de-unidades-laboratoriais@native-2026-10-05+5089b7084d55",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3789557/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -279,7 +279,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb"
+      "implementationHash": "5089b7084d5555209d4dbde7c8b16eeef56333a618b53c21cdde33e0614a6fac",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "conversao-de-unidades-laboratoriais@native-2026-10-03+bbd17ff12b68",
+          "previousImplementationHash": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb",
+          "implementationHash": "5089b7084d5555209d4dbde7c8b16eeef56333a618b53c21cdde33e0614a6fac",
+          "scientificBodySha256": "1a824838e078abad276761c574ad5feb01b49e91621a08a58287d75ac2360a30",
+          "metadataContractHash": "7ccfe108d3f2f158a8332f520093f279907521ed595a5641377fdc84a0856fcd",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Selecione o analito e a unidade: concentração de massa e concentração de quantidade de substância são grandezas diferentes, ligadas pela massa molar da entidade especificada. Os fatores desta interface são arredondados; triglicerídeos usam a base trioleína. BUN expressa nitrogênio ureico e não a massa de ureia, portanto não são intercambiáveis. A conversão não altera o método laboratorial nem estabelece intervalo de referência. As tabelas originais de Young 1987 não foram integralmente conferidas; não se declara certificação de todos os fatores por essa fonte.",
     "limitsEvidence": {
@@ -309,15 +337,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/conversao-de-unidades-laboratoriais/calculator.js",
-    "bytes": 5776,
-    "sha256": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb"
+    "bytes": 5981,
+    "sha256": "5089b7084d5555209d4dbde7c8b16eeef56333a618b53c21cdde33e0614a6fac"
   },
-  "sourceToolSha256": "754228a00f0285579a67ee6c87ea6293eff107a46a55fde72396b5d77d6002d7",
+  "sourceToolSha256": "7fbf55432f9b9ded578d85187ec42c304ce9d6cb688fc189ca60cabf3d721a56",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "446cd98bc462a9fd1e35fed3d7b7d06cfc299948fd23c815335860dfcc7f28d5",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

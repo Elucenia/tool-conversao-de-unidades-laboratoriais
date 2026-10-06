@@ -1,0 +1,439 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "conversao-de-unidades-laboratoriais",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "1a9e18d744ab0f9b183919a1059fb13b7fae639b",
+    "oldEngineSha256": "bbd17ff12b68de9bdde106375df1af4e9cb79b1f12a79b9d1ad61ac7627655eb",
+    "currentEngineSha256": "5089b7084d5555209d4dbde7c8b16eeef56333a618b53c21cdde33e0614a6fac"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+      "input": {
+        "an": "glicose",
+        "dir": "si",
+        "val": 100
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "5,55",
+          "mmol/L"
+        ],
+        "label": "Glicose em unidade SI",
+        "raw": {
+          "out": 5.550621669626999
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 5.551
+        },
+        "main": "5,55",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5,55",
+          "mmol/L"
+        ],
+        "label": "Glicose em unidade SI",
+        "level": "info",
+        "verdict": "100 mg/dL = 5,55 mmol/L",
+        "rows": [
+          [
+            "Fator (mg/dL → mmol/L)",
+            "× 0,0555"
+          ]
+        ],
+        "raw": {
+          "out": 5.550621669626999
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+      "input": {
+        "an": "creatinina",
+        "dir": "si",
+        "val": 1
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "88",
+          "µmol/L"
+        ],
+        "label": "Creatinina em unidade SI",
+        "raw": {
+          "out": 88.4016973125884
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 88.4
+        },
+        "main": "88",
+        "tol": 0.05
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "88",
+          "µmol/L"
+        ],
+        "label": "Creatinina em unidade SI",
+        "level": "info",
+        "verdict": "1,00 mg/dL = 88 µmol/L",
+        "rows": [
+          [
+            "Fator (mg/dL → µmol/L)",
+            "× 88,4"
+          ]
+        ],
+        "raw": {
+          "out": 88.4016973125884
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+      "input": {
+        "an": "colesterol",
+        "dir": "conv",
+        "val": 5
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "193",
+          "mg/dL"
+        ],
+        "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+        "raw": {
+          "out": 193.325
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 193.33
+        },
+        "tol": 0.05
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "193",
+          "mg/dL"
+        ],
+        "label": "Colesterol (total, HDL ou LDL) em unidade convencional",
+        "level": "info",
+        "verdict": "5,00 mmol/L = 193 mg/dL",
+        "rows": [
+          [
+            "Fator (mg/dL → mmol/L)",
+            "× 0,0259"
+          ]
+        ],
+        "raw": {
+          "out": 193.325
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+      "input": {
+        "an": "ureia",
+        "dir": "si",
+        "val": 40
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "6,66",
+          "mmol/L"
+        ],
+        "label": "Ureia em unidade SI",
+        "raw": {
+          "out": 6.66000666000666,
+          "bun": 18.657342657342657
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 6.66,
+          "bun": 18.657
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6,66",
+          "mmol/L"
+        ],
+        "label": "Ureia em unidade SI",
+        "level": "info",
+        "verdict": "40 mg/dL = 6,66 mmol/L",
+        "rows": [
+          [
+            "BUN equivalente",
+            "18,7 mg/dL"
+          ],
+          [
+            "Fator (mg/dL → mmol/L)",
+            "× 0,1665"
+          ]
+        ],
+        "raw": {
+          "out": 6.66000666000666,
+          "bun": 18.657342657342657
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+      "input": {
+        "an": "bun",
+        "dir": "si",
+        "val": 20
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "7,14",
+          "mmol/L de ureia"
+        ],
+        "label": "BUN (nitrogênio ureico) em unidade SI",
+        "raw": {
+          "out": 7.139287499107589,
+          "ureia": 42.87856071964018
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 7.139,
+          "ureia": 42.88
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,14",
+          "mmol/L de ureia"
+        ],
+        "label": "BUN (nitrogênio ureico) em unidade SI",
+        "level": "info",
+        "verdict": "20 mg/dL = 7,14 mmol/L de ureia",
+        "rows": [
+          [
+            "Ureia equivalente",
+            "42,9 mg/dL"
+          ],
+          [
+            "Fator (mg/dL → mmol/L de ureia)",
+            "× 0,3570"
+          ]
+        ],
+        "raw": {
+          "out": 7.139287499107589,
+          "ureia": 42.87856071964018
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+      "input": {
+        "an": "bilirrubina",
+        "dir": "conv",
+        "val": 17.1
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "1,0",
+          "mg/dL"
+        ],
+        "label": "Bilirrubina em unidade convencional",
+        "raw": {
+          "out": 0.9997686
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 1
+        },
+        "main": "1,0",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,0",
+          "mg/dL"
+        ],
+        "label": "Bilirrubina em unidade convencional",
+        "level": "info",
+        "verdict": "17 µmol/L = 1,0 mg/dL",
+        "rows": [
+          [
+            "Fator (mg/dL → µmol/L)",
+            "× 17,1"
+          ]
+        ],
+        "raw": {
+          "out": 0.9997686
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 6,
+      "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+      "input": {
+        "an": "calcio",
+        "dir": "si",
+        "val": 10
+      },
+      "publicOutput": {
+        "id": "conversao-de-unidades-laboratoriais",
+        "main": [
+          "2,50",
+          "mmol/L"
+        ],
+        "label": "Cálcio total em unidade SI",
+        "raw": {
+          "out": 2.4950099800399204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "out": 2.495
+        },
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2,50",
+          "mmol/L"
+        ],
+        "label": "Cálcio total em unidade SI",
+        "level": "info",
+        "verdict": "10,0 mg/dL = 2,50 mmol/L",
+        "rows": [
+          [
+            "Fator (mg/dL → mmol/L)",
+            "× 0,2495"
+          ]
+        ],
+        "raw": {
+          "out": 2.4950099800399204
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

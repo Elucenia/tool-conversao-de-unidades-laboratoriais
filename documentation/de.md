@@ -88,3 +88,72 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+100 mg/dL = 5,55 mmol/L
+
+| Ergebnisdetails | |
+| --- | --- |
+| Faktor (mg/dL → mmol/L) | × 0,0555 |
+
+
+### 2
+
+1,00 mg/dL = 88 µmol/L
+
+| Ergebnisdetails | |
+| --- | --- |
+| Faktor (mg/dL → µmol/L) | × 88,4 |
+
+
+### 3
+
+5,00 mmol/L = 193 mg/dL
+
+| Ergebnisdetails | |
+| --- | --- |
+| Faktor (mg/dL → mmol/L) | × 0,0259 |
+
+
+### 4
+
+40 mg/dL = 6,66 mmol/L
+
+| Ergebnisdetails | |
+| --- | --- |
+| Entsprechendes BUN | 18,7 mg/dL |
+| Faktor (mg/dL → mmol/L) | × 0,1665 |
+
+
+### 5
+
+20 mg/dL = 7,14 mmol/L Harnstoff
+
+| Ergebnisdetails | |
+| --- | --- |
+| Entsprechender Harnstoff | 42,9 mg/dL |
+| Faktor (mg/dL → mmol/L Harnstoff) | × 0,3570 |
+
+
+### 6
+
+17 µmol/L = 1,0 mg/dL
+
+| Ergebnisdetails | |
+| --- | --- |
+| Faktor (mg/dL → µmol/L) | × 17,1 |
+
+
+### 7
+
+10,0 mg/dL = 2,50 mmol/L
+
+| Ergebnisdetails | |
+| --- | --- |
+| Faktor (mg/dL → mmol/L) | × 0,2495 |
+

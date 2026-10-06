@@ -1,0 +1,2602 @@
+{
+  "id": "conversao-de-unidades-laboratoriais",
+  "implementationVersion": "conversao-de-unidades-laboratoriais@native-2026-10-05+5089b7084d55",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fator (mg/dL → mmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 0,0555",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5,55 mmol/L",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fator (mg/dL → µmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 88,4",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1,00 mg/dL = 88 µmol/L",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fator (mg/dL → mmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 0,0259",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5,00 mmol/L = 193 mg/dL",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN equivalente",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "18,7 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fator (mg/dL → mmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 0,1665",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6,66 mmol/L",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ureia equivalente",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "42,9 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fator (mg/dL → mmol/L de ureia)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 0,3570",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7,14 mmol/L de ureia",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fator (mg/dL → µmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 17,1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1,0 mg/dL",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fator (mg/dL → mmol/L)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "× 0,2495",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10,0 mg/dL = 2,50 mmol/L",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "en",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0555",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5.55 mmol/L",
+            "locale": "en",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → µmol/L)",
+                "locale": "en",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88.4",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00 mg/dL = 88 µmol/L",
+            "locale": "en",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "en",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0259",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5.00 mmol/L = 193 mg/dL",
+            "locale": "en",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equivalent BUN",
+                "locale": "en",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18.7 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "en",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.1665",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6.66 mmol/L",
+            "locale": "en",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Equivalent urea",
+                "locale": "en",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42.9 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L of urea)",
+                "locale": "en",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0.3570",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7.14 mmol/L of urea",
+            "locale": "en",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → µmol/L)",
+                "locale": "en",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17.1",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1.0 mg/dL",
+            "locale": "en",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "en",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.2495",
+                "locale": "en",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10.0 mg/dL = 2.50 mmol/L",
+            "locale": "en",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "es",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0555",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5,55 mmol/L",
+            "locale": "es",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → µmol/L)",
+                "locale": "es",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88,4",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1,00 mg/dL = 88 µmol/L",
+            "locale": "es",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "es",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0259",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5,00 mmol/L = 193 mg/dL",
+            "locale": "es",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN equivalente",
+                "locale": "es",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18,7 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "es",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,1665",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6,66 mmol/L",
+            "locale": "es",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Urea equivalente",
+                "locale": "es",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42,9 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L de urea)",
+                "locale": "es",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0,3570",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7,14 mmol/L de urea",
+            "locale": "es",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → µmol/L)",
+                "locale": "es",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17,1",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1,0 mg/dL",
+            "locale": "es",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Factor (mg/dL → mmol/L)",
+                "locale": "es",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,2495",
+                "locale": "es",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10,0 mg/dL = 2,50 mmol/L",
+            "locale": "es",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Facteur (mg/dL → mmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0555",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5,55 mmol/L",
+            "locale": "fr",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Facteur (mg/dL → µmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88,4",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1,00 mg/dL = 88 µmol/L",
+            "locale": "fr",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Facteur (mg/dL → mmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0259",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5,00 mmol/L = 193 mg/dL",
+            "locale": "fr",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN équivalent",
+                "locale": "fr",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18,7 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Facteur (mg/dL → mmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,1665",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6,66 mmol/L",
+            "locale": "fr",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Urée équivalente",
+                "locale": "fr",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42,9 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Facteur (mg/dL → mmol/L d’urée)",
+                "locale": "fr",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0,3570",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7,14 mmol/L d’urée",
+            "locale": "fr",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Facteur (mg/dL → µmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17,1",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1,0 mg/dL",
+            "locale": "fr",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Facteur (mg/dL → mmol/L)",
+                "locale": "fr",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,2495",
+                "locale": "fr",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10,0 mg/dL = 2,50 mmol/L",
+            "locale": "fr",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faktor (mg/dL → mmol/L)",
+                "locale": "de",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0555",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5,55 mmol/L",
+            "locale": "de",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faktor (mg/dL → µmol/L)",
+                "locale": "de",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88,4",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1,00 mg/dL = 88 µmol/L",
+            "locale": "de",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faktor (mg/dL → mmol/L)",
+                "locale": "de",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0259",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5,00 mmol/L = 193 mg/dL",
+            "locale": "de",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Entsprechendes BUN",
+                "locale": "de",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18,7 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Faktor (mg/dL → mmol/L)",
+                "locale": "de",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,1665",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6,66 mmol/L",
+            "locale": "de",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Entsprechender Harnstoff",
+                "locale": "de",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42,9 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Faktor (mg/dL → mmol/L Harnstoff)",
+                "locale": "de",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0,3570",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7,14 mmol/L Harnstoff",
+            "locale": "de",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faktor (mg/dL → µmol/L)",
+                "locale": "de",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17,1",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1,0 mg/dL",
+            "locale": "de",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Faktor (mg/dL → mmol/L)",
+                "locale": "de",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,2495",
+                "locale": "de",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10,0 mg/dL = 2,50 mmol/L",
+            "locale": "de",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fattore (mg/dL → mmol/L)",
+                "locale": "it",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0555",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5,55 mmol/L",
+            "locale": "it",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fattore (mg/dL → µmol/L)",
+                "locale": "it",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88,4",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1,00 mg/dL = 88 µmol/L",
+            "locale": "it",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fattore (mg/dL → mmol/L)",
+                "locale": "it",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,0259",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5,00 mmol/L = 193 mg/dL",
+            "locale": "it",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN equivalente",
+                "locale": "it",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18,7 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fattore (mg/dL → mmol/L)",
+                "locale": "it",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,1665",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6,66 mmol/L",
+            "locale": "it",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Urea equivalente",
+                "locale": "it",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42,9 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fattore (mg/dL → mmol/L di urea)",
+                "locale": "it",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0,3570",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7,14 mmol/L di urea",
+            "locale": "it",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fattore (mg/dL → µmol/L)",
+                "locale": "it",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17,1",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1,0 mg/dL",
+            "locale": "it",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fattore (mg/dL → mmol/L)",
+                "locale": "it",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0,2495",
+                "locale": "it",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10,0 mg/dL = 2,50 mmol/L",
+            "locale": "it",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العامل (mg/dL → mmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× ٠٫٠٥٥٥",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١٠٠ mg/dL = ٥٫٥٥ mmol/L",
+            "locale": "ar",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عامل (mg/dL → µmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× ٨٨٫٤",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١٫٠٠ mg/dL = ٨٨ µmol/L",
+            "locale": "ar",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العامل (mg/dL → mmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× ٠٫٠٢٥٩",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٥٫٠٠ mmol/L = ١٩٣ mg/dL",
+            "locale": "ar",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN المكافئ",
+                "locale": "ar",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "١٨٫٧ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العامل (mg/dL → mmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× ٠٫١٦٦٥",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٤٠ mg/dL = ٦٫٦٦ mmol/L",
+            "locale": "ar",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "اليوريا المكافئة",
+                "locale": "ar",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "٤٢٫٩ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "عامل (mg/dL → mmol/L من اليوريا)",
+                "locale": "ar",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× ٠٫٣٥٧٠",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٢٠ mg/dL = ٧٫١٤ mmol/L من اليوريا",
+            "locale": "ar",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عامل (mg/dL → µmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× ١٧٫١",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١٧ µmol/L = ١٫٠ mg/dL",
+            "locale": "ar",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العامل (mg/dL → mmol/L)",
+                "locale": "ar",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× ٠٫٢٤٩٥",
+                "locale": "ar",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١٠٫٠ mg/dL = ٢٫٥٠ mmol/L",
+            "locale": "ar",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "换算系数（mg/dL → mmol/L）",
+                "locale": "zh",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0555",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5.55 mmol/L",
+            "locale": "zh",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "因子 (mg/dL → µmol/L)",
+                "locale": "zh",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88.4",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00 mg/dL = 88 µmol/L",
+            "locale": "zh",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "换算系数（mg/dL → mmol/L）",
+                "locale": "zh",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0259",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5.00 mmol/L = 193 mg/dL",
+            "locale": "zh",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等效 BUN",
+                "locale": "zh",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18.7 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "换算系数（mg/dL → mmol/L）",
+                "locale": "zh",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.1665",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6.66 mmol/L",
+            "locale": "zh",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等效尿素",
+                "locale": "zh",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42.9 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "因子 (mg/dL → mmol/L 尿素)",
+                "locale": "zh",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0.3570",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7.14 mmol/L 尿素",
+            "locale": "zh",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "因子 (mg/dL → µmol/L)",
+                "locale": "zh",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17.1",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1.0 mg/dL",
+            "locale": "zh",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "换算系数（mg/dL → mmol/L）",
+                "locale": "zh",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.2495",
+                "locale": "zh",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10.0 mg/dL = 2.50 mmol/L",
+            "locale": "zh",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "換算係数（mg/dL → mmol/L）",
+                "locale": "ja",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0555",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5.55 mmol/L",
+            "locale": "ja",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "係数 (mg/dL → µmol/L)",
+                "locale": "ja",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88.4",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00 mg/dL = 88 µmol/L",
+            "locale": "ja",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "換算係数（mg/dL → mmol/L）",
+                "locale": "ja",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0259",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5.00 mmol/L = 193 mg/dL",
+            "locale": "ja",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "BUN相当",
+                "locale": "ja",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18.7 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "換算係数（mg/dL → mmol/L）",
+                "locale": "ja",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.1665",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6.66 mmol/L",
+            "locale": "ja",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "尿素相当",
+                "locale": "ja",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42.9 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "係数 (mg/dL → mmol/L の尿素)",
+                "locale": "ja",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0.3570",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7.14 mmol/L の尿素",
+            "locale": "ja",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "係数 (mg/dL → µmol/L)",
+                "locale": "ja",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17.1",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1.0 mg/dL",
+            "locale": "ja",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "換算係数（mg/dL → mmol/L）",
+                "locale": "ja",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.2495",
+                "locale": "ja",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10.0 mg/dL = 2.50 mmol/L",
+            "locale": "ja",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Glicose 100 mg/dL: 5,55 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गुणक (mg/dL → mmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0555",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0555
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "100 mg/dL = 5.55 mmol/L",
+            "locale": "hi",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              100,
+              5.55
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Creatinina 1,0 mg/dL: 88 µmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कारक (mg/dL → µmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 88.4",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  88.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00 mg/dL = 88 µmol/L",
+            "locale": "hi",
+            "template": "documented-authored-43fb545cf8aef824443f",
+            "sourceNumbers": [
+              1,
+              88
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Colesterol 5,0 mmol/L: 193,3 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गुणक (mg/dL → mmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.0259",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.0259
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5.00 mmol/L = 193 mg/dL",
+            "locale": "hi",
+            "template": "documented-authored-9262ae3e17d7eb0d4433",
+            "sourceNumbers": [
+              5,
+              193
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ureia 40 mg/dL: 6,66 mmol/L e BUN 18,7 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "समतुल्य BUN",
+                "locale": "hi",
+                "template": "documented-authored-1a984e5236cedd91867e"
+              },
+              "value": {
+                "text": "18.7 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  18.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "गुणक (mg/dL → mmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.1665",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.1665
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 mg/dL = 6.66 mmol/L",
+            "locale": "hi",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              40,
+              6.66
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "BUN 20 mg/dL: 7,14 mmol/L de ureia e ureia 42,9 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "समतुल्य यूरिया",
+                "locale": "hi",
+                "template": "documented-authored-152f3140d2aeec3ed2f4"
+              },
+              "value": {
+                "text": "42.9 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-40c4683cfc3483f464e6",
+                "sourceNumbers": [
+                  42.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "कारक (mg/dL → mmol/L यूरिया)",
+                "locale": "hi",
+                "template": "documented-authored-892b9cfd97b95b2795a4"
+              },
+              "value": {
+                "text": "× 0.3570",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.357
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "20 mg/dL = 7.14 mmol/L यूरिया",
+            "locale": "hi",
+            "template": "documented-authored-037b18dfc72347d30c1c",
+            "sourceNumbers": [
+              20,
+              7.14
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Bilirrubina 17,1 µmol/L: 1,0 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कारक (mg/dL → µmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-1e33f0c9add9cc09a9cd"
+              },
+              "value": {
+                "text": "× 17.1",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  17.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "17 µmol/L = 1.0 mg/dL",
+            "locale": "hi",
+            "template": "documented-authored-e3247dc6021484ed8806",
+            "sourceNumbers": [
+              17,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Cálcio 10 mg/dL: 2,50 mmol/L",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गुणक (mg/dL → mmol/L)",
+                "locale": "hi",
+                "template": "documented-authored-f6d62a81f0487e8ccc3d"
+              },
+              "value": {
+                "text": "× 0.2495",
+                "locale": "hi",
+                "template": "documented-authored-9e553616a1a183bce749",
+                "sourceNumbers": [
+                  0.2495
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "10.0 mg/dL = 2.50 mmol/L",
+            "locale": "hi",
+            "template": "documented-authored-b7edac434306e8ad397e",
+            "sourceNumbers": [
+              10,
+              2.5
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

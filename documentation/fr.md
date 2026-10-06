@@ -88,3 +88,72 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+100 mg/dL = 5,55 mmol/L
+
+| Détails du résultat | |
+| --- | --- |
+| Facteur (mg/dL → mmol/L) | × 0,0555 |
+
+
+### 2
+
+1,00 mg/dL = 88 µmol/L
+
+| Détails du résultat | |
+| --- | --- |
+| Facteur (mg/dL → µmol/L) | × 88,4 |
+
+
+### 3
+
+5,00 mmol/L = 193 mg/dL
+
+| Détails du résultat | |
+| --- | --- |
+| Facteur (mg/dL → mmol/L) | × 0,0259 |
+
+
+### 4
+
+40 mg/dL = 6,66 mmol/L
+
+| Détails du résultat | |
+| --- | --- |
+| BUN équivalent | 18,7 mg/dL |
+| Facteur (mg/dL → mmol/L) | × 0,1665 |
+
+
+### 5
+
+20 mg/dL = 7,14 mmol/L d’urée
+
+| Détails du résultat | |
+| --- | --- |
+| Urée équivalente | 42,9 mg/dL |
+| Facteur (mg/dL → mmol/L d’urée) | × 0,3570 |
+
+
+### 6
+
+17 µmol/L = 1,0 mg/dL
+
+| Détails du résultat | |
+| --- | --- |
+| Facteur (mg/dL → µmol/L) | × 17,1 |
+
+
+### 7
+
+10,0 mg/dL = 2,50 mmol/L
+
+| Détails du résultat | |
+| --- | --- |
+| Facteur (mg/dL → mmol/L) | × 0,2495 |
+

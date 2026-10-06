@@ -88,3 +88,72 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+100 mg/dL = 5,55 mmol/L
+
+| Dettagli del risultato | |
+| --- | --- |
+| Fattore (mg/dL → mmol/L) | × 0,0555 |
+
+
+### 2
+
+1,00 mg/dL = 88 µmol/L
+
+| Dettagli del risultato | |
+| --- | --- |
+| Fattore (mg/dL → µmol/L) | × 88,4 |
+
+
+### 3
+
+5,00 mmol/L = 193 mg/dL
+
+| Dettagli del risultato | |
+| --- | --- |
+| Fattore (mg/dL → mmol/L) | × 0,0259 |
+
+
+### 4
+
+40 mg/dL = 6,66 mmol/L
+
+| Dettagli del risultato | |
+| --- | --- |
+| BUN equivalente | 18,7 mg/dL |
+| Fattore (mg/dL → mmol/L) | × 0,1665 |
+
+
+### 5
+
+20 mg/dL = 7,14 mmol/L di urea
+
+| Dettagli del risultato | |
+| --- | --- |
+| Urea equivalente | 42,9 mg/dL |
+| Fattore (mg/dL → mmol/L di urea) | × 0,3570 |
+
+
+### 6
+
+17 µmol/L = 1,0 mg/dL
+
+| Dettagli del risultato | |
+| --- | --- |
+| Fattore (mg/dL → µmol/L) | × 17,1 |
+
+
+### 7
+
+10,0 mg/dL = 2,50 mmol/L
+
+| Dettagli del risultato | |
+| --- | --- |
+| Fattore (mg/dL → mmol/L) | × 0,2495 |
+
